@@ -31,7 +31,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item mr-5">
-              <a class="nav-link" href="addMenu.html">Add Recipe</a>
+              <a class="nav-link" href="addMenu.html">Add Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">Search Menu</a>
@@ -40,30 +40,66 @@
           <section class="nav-account d-flex">
             <div class="block mt-1 mr-3"></div>
             <div class="content d-flex align-items-center">
-              <img src="assets/img/iconComment.png" alt="" class="mr-2 mt-1" />
+              <a href="detailProfile.html">
+                <img
+                  src="assets/img/iconComment.png"
+                  alt=""
+                  class="mr-2 mt-1"
+                />
+              </a>
               <div
                 class="comment-user d-flex flex-column mr-5 align-items-center"
               >
-                <div class="nameAcc">
-                  <p class="mb-0">Ayudia</p>
+                <div class="comment1">
+                  <a href="profile.html" class="text-dark mb-0">Ayudia</a>
                 </div>
-                <div class="logoutAcc">
-                  <p class="font-weight-bold mb-0">Logout</p>
+                <div class="comment2">
+                  <a
+                    href="#"
+                    class="font-weight-bold mb-0 text-dark"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                    >Logout</a
+                  >
                 </div>
+                <!-- Modal Logout  start-->
+                <div
+                  class="modal modal-md"
+                  id="logoutModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="activeModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content align-items-center">
+                      <div class="modal-body text-center mt-5">
+                        <!-- Modal content goes here -->
+                        <p class="font-weight-bold form-control-lg">
+                          You want to logout?
+                        </p>
+                      </div>
+                      <a
+                        href="auth/login.html"
+                        class="activated btn mb-1 custom-button"
+                        >Yes</a
+                      >
+                      <a
+                        class="activated btn mb-5 custom-button2"
+                        data-dismiss="modal"
+                        >Cancel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal Logout end -->
               </div>
             </div>
           </section>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input
-            class="form-control m   r-sm-2"
-            type="search"
-            placeholder="Search"
-              aria-label="Search"
-              />
-            <button class="btn btn-outline-success my-2 mr-lg-2" type="submit">
-              Search
-            </button>
-        </form> -->
         </div>
       </nav>
     </header>
