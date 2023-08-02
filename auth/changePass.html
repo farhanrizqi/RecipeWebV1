@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Web</title>
+    <!-- css bootstrap start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- css bootstrap end-->
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Lora:ital@1&family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts end -->
+    <link rel="stylesheet" href="../assets/css/changePass.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-5 ml-lg-4">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="addMenu.html">Add Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Search Menu</a>
+            </li>
+          </ul>
+          <section class="nav-account d-flex">
+            <div class="block mt-1 mr-3"></div>
+            <div class="content d-flex align-items-center">
+              <a href="profile.html">
+                <img
+                  src="../assets/img/iconComment.png"
+                  alt=""
+                  class="mr-2 mt-1"
+                />
+              </a>
+              <div
+                class="comment-user d-flex flex-column mr-5 align-items-center"
+              >
+                <div class="comment1">
+                  <a href="profile.html" class="text-dark mb-0">Ayudia</a>
+                </div>
+                <div class="comment2">
+                  <a
+                    href="#"
+                    class="font-weight-bold text-dark mb-0"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                    >Logout</a
+                  >
+                </div>
+                <!-- Modal Logout  start-->
+                <div
+                  class="modal modal-md"
+                  id="logoutModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="activeModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content align-items-center">
+                      <div class="modal-body text-center mt-5">
+                        <!-- Modal content goes here -->
+                        <p class="font-weight-bold form-control-lg">
+                          You want to logout?
+                        </p>
+                      </div>
+                      <a
+                        href="auth/login.html"
+                        class="activated btn mb-1 custom-button"
+                        >Yes</a
+                      >
+                      <a
+                        class="activated btn mb-5 custom-button2"
+                        data-dismiss="modal"
+                        >Cancel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal Logout end -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </nav>
+    </header>
+    <section class="regis container">
+      <div class="content d-flex flex-lg-column">
+        <h3 class="mt-5">Forgot Password</h3>
+        <p class="mb-2">Send OTP to your email</p>
+        <hr class="w-60" />
+        <div class="formReg">
+          <div class="mb-3">
+            <label for="oldPass" class="mb-1">Old Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="oldPass"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="newPass" class="mb-1">New Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="newPass"
+              placeholder=""
+              required
+            />
+          </div>
+          <a
+            href="login.html"
+            class="buttonRegis btn btn-md w-100 custom-button"
+            data-toggle="modal"
+            data-target="#changePassModal"
+          >
+            Change Password
+          </a>
+          <h6 class="forgotPass mt-3 text-left">
+            Back to edit profile ?
+            <span
+              ><a href="../detailProfile.html" class="link"
+                >&nbsp;Click Here</a
+              ></span
+            >
+          </h6>
+          <!-- Modal Logout  start-->
+          <div
+            class="modal modal-md"
+            id="changePassModal"
+            data-backdrop="static"
+            data-keyboard="false"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="activeModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content align-items-center">
+                <div class="modal-body text-center mt-5">
+                  <p class="text-head font-weight-bold form-control-lg">
+                    Password has been updated
+                  </p>
+                  <p class="font-weight-bold form-control-lg">
+                    Please login again
+                  </p>
+                </div>
+                <a href="login.html" class="activated btn custom-button">OK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Logout end -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS start -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS end -->
+  </body>
+</html>

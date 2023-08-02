@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Recipe</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="side"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item me-5 ms-5">
+            <a class="nav-link" href="auth/registration.html">Register</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#">Search Menu</a>
+          </li>
+        </ul>
+        <section class="nav-account d-flex">
+          <div class="content d-flex align-items-center">
+            <img src="assets/img/iconComment.png" alt="" class="me-2 mt-1" />
+            <div
+              class="comment-user d-flex flex-column me-5 align-items-center"
+            >
+              <div class="comment1">
+                <p class="text- mb-0">Ayudia</p>
+              </div>
+              <div class="comment2">
+                <a
+                  href="#"
+                  class="font-weight-bold mb-0 text-dark"
+                  data-toggle="modal"
+                  data-target="#logoutModal"
+                  >Logout</a
+                >
+              </div>
+              <!-- Modal Logout  start-->
+              <div
+                class="modal modal-md"
+                id="logoutModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="activeModal"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content align-items-center">
+                    <div class="modal-body text-center mt-5">
+                      <!-- Modal content goes here -->
+                      <p class="font-weight-bold form-control-lg">
+                        You want to logout?
+                      </p>
+                    </div>
+                    <a href="auth/login.html" class="btn mb-1 custom-button"
+                      >Yes</a
+                    >
+                    <a
+                      class="activated btn mb-5 custom-button2"
+                      data-dismiss="modal"
+                      >Cancel</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Logout end -->
+            </div>
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <div
+      class="modal fade"
+      id="noticeModal"
+      tabindex="-1"
+      aria-labelledby="logoutModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">Please log in first</div>
+          <div class="modal-footer d-block mt-4">
+            <button
+              type="button"
+              class="btn btn-warning btnYes text-light"
+              data-bs-dismiss="modal"
+            >
+              Ok
+            </button>
+            <!-- <button type="button" class="btn btn-secondary btnCancel text-light" data-bs-dismiss="modal">Cancel</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto ps-5">
+            <h1 class="mt-5">Discover Recipe <br />& Delicious Food</h1>
+            <div class="input-group input-group-lg mt-3 inputSearch">
+              <span
+                class="input-group-text bg-body-secondary"
+                id="inputGroup-sizing-lg"
+              >
+                <img src="assets/img/cari.png" alt="Search" width="20" />
+              </span>
+              <input
+                type="text"
+                class="form-control bg-body-secondary"
+                placeholder="search restaurant, food"
+                aria-label="search restaurant, food"
+                aria-describedby="inputGroup-sizing-lg"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5">
+            <div class="imgCover bg-primary ms-5 rounded-4">
+              <img
+                src="assets/img/discover.png"
+                alt="Image 1"
+                class="rounded-4"
+                data-bs-toggle="modal"
+                data-bs-target="#noticeModal"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popularforyou">
+      <div class="circle position-absolute">
+        <div class="circle1">
+          <div class="circle-round rounded-circle"></div>
+          <div class="circle-round rounded-circle"></div>
+          <div class="circle-round rounded-circle"></div>
+        </div>
+        <div class="circle2">
+          <div class="circle-round rounded-circle"></div>
+          <div class="circle-round rounded-circle"></div>
+          <div class="circle-round rounded-circle"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 ms-5 mt-5 ssquare">
+            <div class="square bg-warning"></div>
+          </div>
+          <div class="col mt-5">
+            <h3 class="mt-3">Popular For You !</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 mt-5 mb-5">
+            <div class="squareborder position-absolute rounded-3"></div>
+            <img
+              src="assets/img/fyp.png"
+              alt="Image 2"
+              width="450"
+              class="rounded-3 ms-5"
+            />
+          </div>
+          <div class="col-md-6 m-auto">
+            <div class="content">
+              <h3>Healthy Bone Broth Ramen (Quick & Easy)</h3>
+              <p>
+                Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in
+                a hurry? That’s right!
+              </p>
+              <button type="button" class="btn btn-warning mt-3">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newrecipe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 ms-5 mt-5 ssquare">
+            <div class="square bg-warning"></div>
+          </div>
+          <div class="col mt-5">
+            <h3 class="mt-3">New Recipe</h3>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 mt-5 mb-5">
+            <div class="squaresolid position-absolute bg-warning"></div>
+            <img
+              src="assets/img/newRecipe.png"
+              alt="Image 3"
+              width="450"
+              class="rounded-3 ms-5 mt-5"
+            />
+          </div>
+          <div class="col-md-6 m-auto">
+            <div class="content">
+              <h3>Healthy Bone Broth Ramen (Quick & Easy)</h3>
+              <p>
+                Quick + Easy Chicken Bone Broth Ramen- Healthy chicken ramen in
+                a hurry? That’s right!
+              </p>
+              <button type="button" class="btn btn-warning mt-3">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popularrecipe">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 ms-5 mt-5 ssquare">
+            <div class="square bg-warning"></div>
+          </div>
+          <div class="col mt-5">
+            <h3 class="mt-3">Popular Recipe</h3>
+          </div>
+        </div>
+        <div class="row mt-5 ps-5 pe-5">
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image1 rounded-3">
+              <p>
+                Chicken <br />
+                Kare
+              </p>
+            </div>
+          </div>
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image2 rounded-3">
+              <p>
+                Bomb <br />
+                Chicken
+              </p>
+            </div>
+          </div>
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image3 rounded-3">
+              <p>
+                Banana<br />
+                Smothie Pop
+              </p>
+            </div>
+          </div>
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image4 rounded-3">
+              <p>
+                Coffe Lava <br />
+                Cake
+              </p>
+            </div>
+          </div>
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image5 rounded-3">
+              <p>
+                Sugar <br />
+                Salmon
+              </p>
+            </div>
+          </div>
+          <div class="col mt-5 d-flex justify-content-center">
+            <div class="image6 rounded-3">
+              <p>
+                Indian<br />
+                Salad
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-warning d-flex align-items-center justify-content-center">
+      <div class="text-center text">
+        <p class="eat">Eat, Cook, Repeat</p>
+        <h6>Share Your Best Recipe By Uploading Here !</h6>
+        <ul class="list d-flex align-items-center justify-content-center">
+          <li class="list-group-item me-4 mt-5">Product</li>
+          <li class="list-group-item me-4 mt-5">Company</li>
+          <li class="list-group-item me-4 mt-5">Learn More</li>
+          <li class="list-group-item me-4 mt-5">Get In Touch</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

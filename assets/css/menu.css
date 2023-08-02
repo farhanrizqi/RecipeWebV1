@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #efc81a;
+  --secondary-color: #8692a6;
+  --custom-color: #f5f5f5;
+}
+.custom-button {
+  background-color: var(--primary-color);
+  color: #fff; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.custom-button2 {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.modal-body .cancelLogout {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+* {
+  font-family: "Poppins";
+}
+
+/* ! colorbox start */
+
+.sideBlock {
+  background-color: #efc81a;
+  position: absolute;
+  z-index: -9999;
+  width: 2%;
+  height: 50rem;
+  right: 0;
+}
+.sideBlock2 {
+  background-color: #efc81a;
+  position: absolute;
+  z-index: -9999;
+  width: 2%;
+  height: 100%;
+  right: 0;
+  margin-top: 20rem;
+}
+
+/* ! colorbox end */
+
+/* ! nav start */
+.block {
+  width: 3px;
+  height: 45px;
+  background: #efc81a;
+}
+
+.nav-account img {
+  width: 40px;
+  height: 35px;
+  padding-right: 2%;
+}
+
+/* ! nav end */
+
+/* ! Discover start */
+.discover h1 {
+  color: #2e266f;
+  font-size: 72px;
+  font-size: 50px;
+  line-height: 80px;
+}
+.search {
+  height: 58px;
+  background: #efefef;
+  border-radius: 13px;
+  /* border-style: none; */
+
+  font-family: "Poppins";
+  /* font-weight: 500; */
+  font-size: 15px;
+
+  opacity: 0.6;
+
+  background-image: url("../img/cari.png");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 15px 15px;
+}
+
+.srcMenu {
+  font-family: "Poppins";
+  background: #efc81a;
+  font-size: 20px;
+  height: 58px;
+  border-radius: 13px;
+  color: #fff;
+}
+.srcNew {
+  font-family: "Poppins";
+  background: #efc81a;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+.srcPopular {
+  font-family: "Poppins";
+  background: #efc81a;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+.srcVegetarian {
+  font-family: "Poppins";
+  background: #00e092;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+.srcBreakfast {
+  font-family: "Poppins";
+  background: #00e092;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.filter {
+  font-size: 10px;
+}
+
+/* ! Discover end */
+
+/* ! Content start */
+
+.content-wrapper {
+  height: 100%;
+}
+
+.menu-content-pic img {
+  width: 25%;
+}
+.menu-content {
+  width: 25%;
+  color: #3f3a3a;
+}
+.menu-content a {
+  text-decoration: none;
+  color: #000;
+}
+.content-resp .resp {
+  background-color: #efc81a;
+  font-size: 10px;
+  width: 35%;
+}
+.author img {
+  width: 7%;
+}
+.pagination {
+  height: 100px;
+}
+.page-next {
+  background-color: #efc81a;
+}
+
+/* ! Content end */
+/* ! footer start */
+.footer1 {
+  background-color: #efc81a;
+  height: 100%;
+}
+.footer2 {
+  background-color: #efc81a;
+}
+
+.wrapper5 {
+  color: #2e266f;
+}
+.foot li {
+  /* font-size: 15px; */
+  color: #707070;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30%;
+  margin-bottom: 10px;
+}
+
+/* ! footer end */

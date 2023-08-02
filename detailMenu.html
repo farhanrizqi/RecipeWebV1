@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous" 
+    />
+    <!-- css bootstrap end-->
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Lora:ital@1&family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts end -->
+    <link rel="stylesheet" href="assets/css/detailMenu.css" />
+    <title>Recipe Web</title>
+  </head>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-5 ml-lg-4">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="addMenu.html">Add Recipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Search Menu</a>
+            </li>
+          </ul>
+          <section class="nav-account d-flex">
+            <div class="block mt-1 mr-3"></div>
+            <div class="content d-flex align-items-center">
+              <img src="assets/img/iconComment.png" alt="" class="mr-2 mt-1" />
+              <div
+                class="comment-user d-flex flex-column mr-5 align-items-center"
+              >
+                <div class="nameAcc">
+                  <p class="mb-0">Ayudia</p>
+                </div>
+                <div class="logoutAcc">
+                  <p class="font-weight-bold mb-0">Logout</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input
+            class="form-control m   r-sm-2"
+            type="search"
+            placeholder="Search"
+              aria-label="Search"
+              />
+            <button class="btn btn-outline-success my-2 mr-lg-2" type="submit">
+              Search
+            </button>
+        </form> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- TODO content section start-->
+    <section
+      class="content w-100 d-flex flex-column mt-5 "
+    >
+    <!-- post header start -->
+    <div class="postHeader d-flex align-items-center justify-content-between">
+        <!-- Left -->
+        <div class="d-flex align-items-center ml-5">
+          <div class="block mt-1 ml-2 mr-3"></div>
+          <img src="assets/img/iconComment.png" alt="" class="mt-1 mr-2" />
+          <div class="comment-user p-1">
+            <div class="nameAcc">
+              <p class="mb-0">Ayudia</p>
+            </div>
+            <div class="logoutAcc">
+              <p class="font-weight-bold mb-0">10 Recipes</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Right -->
+        <div class="content d-flex mr-5 p-1 text-right">
+          <div class="comment-user">
+            <div class="date">
+              <p class="mb-0">21 February 2023</p>
+            </div>
+            <div class="likes">
+              <p class="font-weight-bold mb-0">20 Likes - 2 Comments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- post header end -->
+    </section>
+    <!-- TODO content section end-->
+    <!-- TODO content section2 start-->
+    <section
+    class="content container-fluid d-flex justify-content-center align-items-center flex-column"
+  >
+    <div class="content-container mt-2">
+        <h1 class="">Egg Sandwich</h1>
+    </div>
+    <div class="thumbnail d-flex justify-content-center mt-2">
+        <img src="assets/img/discover2.png" class="w-50 h-25 d rounded" alt="">
+    </div>
+    <div class="ingredients mt-3 container-fluid">
+        <h3>Ingredients</h3>
+        <ul class="list-unstyled">
+            <li>- 2 eggs</li>
+            <li>- 2 tbsp mayonnaise</li>
+            <li>- 3 slices bread</li>
+            <li>- a little butter</li>
+            <li>- ⅓ carton of cress</li>
+            <li>- 2-3 slices of tomato or a lettuce leaf <br>
+                 and a slice of ham or cheese</li>
+            <li>- Crisps , to serve</li>
+        </ul>
+    </div>
+    <div class="booklike d-flex justify-content-start pl-5 mt-5 container-fluid">
+        <!-- Button Bookmark -->
+    <button type="button" class="book btn btn-sm  rounded mr-2 justify-content-center">
+        <img src="assets/img/bookmark.svg" alt="Bookmark" class="" />
+      </button>
+  
+      <!-- Button Like -->
+      <button type="button" class="like btn btn-sm rounded ">
+        <img src="assets/img/like.svg" alt="Like" class="btn-icon" />
+      </button>
+    </div>
+    <hr class="bar mt-3 mb-5">
+    <section class="comment-content d-flex flex-column container-fluid pl-5">
+        <div class="content d-flex mb-4 align-items-center">
+            <img src="assets/img/iconComment.png" alt="">
+            <div class="comment-user ml-2">
+            <div class="comment1">
+                <h6>Karen</h6>
+            </div>
+            <div class="comment2">
+                <h6 class="font-weight-bold">20 Recipes</h6>
+            </div>
+          </div>
+          <div class="block ml-5 mr-3"></div>
+          <p class="mt-2">Wow, I just made this and it was delicious! Thanks for sharing!</p>
+        </div>
+        <div class="content d-flex align-items-center">
+            <img src="assets/img/iconComment.png" alt="">
+            <div class="comment-user ml-2">
+            <div class="comment1">
+                <h6>Karen</h6>
+            </div>
+            <div class="comment2">
+                <h6 class="font-weight-bold">20 Recipes</h6>
+            </div>
+          </div>
+          <div class="block ml-5 mr-3"></div>
+          <p class="mt-2">so simple and delicious!</p>
+        </div>
+    </section>
+    <hr class="bar mt-5 mb-5">
+    <div class="comment-section container-fluid pl-5">
+        <textarea class="form-control ml-0" placeholder="Your comment here!" id="floatingTextarea2" style="height: 150px"></textarea>
+        <button class="send btn w-25 mt-4 mb-5 rounded text-center text-white ">Send a comment</button>
+
+    </div>
+  </section>
+    <!-- TODO content section2 end-->
+
+    <!-- TODO footer start -->
+    <footer
+      class="footer1 pt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+    >
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div class="wrapper5">
+        <h1 class="text-center">Eat, Cook, Repeat</h1>
+        <h5 class="text-center">Share your best recipe by uploading here !</h5>
+      </div>
+    </div>
+      
+    </footer >
+    <!-- ! -->
+    <footer class="footer2 w-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="foot d-flex justify-content-center">
+        <ul class="d-flex list-unstyled">
+          <li>Product</lic>
+          <li>Company</li>
+          <li>Learn More</li>
+          <li>Get in Touch</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- TODO footer end -->
+    <!-- Bootstrap JS start -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS end -->
+  </body>
+</html>

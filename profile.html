@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap start-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- css bootstrap end-->
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Lora:ital@1&family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts end -->
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <title>Recipe Web</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mr-5 ml-lg-4">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mr-5">
+              <a class="nav-link" href="addMenu.html">Add Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Search Menu</a>
+            </li>
+          </ul>
+          <section class="nav-account d-flex">
+            <div class="block mt-1 mr-3"></div>
+            <div class="content d-flex align-items-center">
+              <a href="detailProfile.html">
+                <img
+                  src="assets/img/iconComment.png"
+                  alt=""
+                  class="mr-2 mt-1"
+                />
+              </a>
+              <div
+                class="comment-user d-flex flex-column mr-5 align-items-center"
+              >
+                <div class="comment1">
+                  <a href="profile.html" class="text-dark mb-0">Ayudia</>
+                </div>
+                <div class="comment2">
+                  <a
+                    href="#"
+                    class="font-weight-bold mb-0"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                    >Logout</a
+                  >
+                </div>
+                <!-- Modal Logout  start-->
+                <div
+                  class="modal modal-md"
+                  id="logoutModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="activeModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content align-items-center">
+                      <div class="modal-body text-center mt-5">
+                        <!-- Modal content goes here -->
+                        <p class="font-weight-bold form-control-lg">
+                          You want to logout?
+                        </p>
+                      </div>
+                      <a
+                        href="auth/login.html"
+                        class="activated btn mb-1 custom-button"
+                        >Yes</a
+                      >
+                      <a
+                        class="activated btn mb-5 custom-button2"
+                        data-dismiss="modal"
+                        >Cancel</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Modal Logout end -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </nav>
+    </header>
+    <!-- TODO content section start-->
+    <section
+      class="content w-100 d-flex flex-column mt-5 "
+    >
+    <!-- post header start -->
+    <div class="postHeader d-flex align-items-center justify-content-between">
+        <!-- Left -->
+        <div class="d-flex align-items-center ml-5">
+          <div class="block mt-1 ml-3 mr-3"></div>
+          <img src="assets/img/iconComment.png" alt="" class="mt-1 mr-2" />
+          <div class="comment-user p-1">
+            <div class="nameAcc">
+              <p class="mb-0">Ayudia</p>
+            </div>
+            <div class="logoutAcc">
+              <p class="font-weight-bold mb-0">10 Recipes</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Right -->
+        <div class="content d-flex mr-5 p-1 text-right">
+          <div class="comment-user">
+            <div class="date">
+              <p class="mb-0 font-weight-bold">21 February 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- post header end -->
+    </section>
+    <!-- TODO content section end-->
+    <!-- TODO Tab section start -->
+    <div class="tabs-wrapper container-fluid pl-5 mt-4">
+        <!-- Navigasi Tabs -->
+        <ul class="nav nav-underline" id="recipesTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="recipes-tab" data-toggle="tab" href="#recipes" role="tab" aria-controls="recipes" aria-selected="true">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="bookmarked-tab" data-toggle="tab" href="#bookmarked" role="tab" aria-controls="bookmarked" aria-selected="false">Bookmarked</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="liked-tab" data-toggle="tab" href="#liked" role="tab" aria-controls="liked" aria-selected="false">Liked</a>
+          </li>
+        </ul>
+        <hr class="bar ml-3">
+    
+        <!-- Tab content start-->
+        <div class="tab-content" id="recipesTabContent">
+          <!-- Tab Recipes start -->
+          <div class="tab-pane fade show active" id="recipes" role="tabpanel" aria-labelledby="recipes-tab">
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+            <div class="menu-content-pic d-flex mt-5">
+        
+                <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                <div class="menu-content-wrapper d-flex flex-column">
+                <div class="menu-content ml-5">
+                <h5>Bomb<br />Chicken</h5>
+                <p class="mb-0">Ingredients:</pm>
+                <p>
+                    Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                    Sesame seed
+                </p>
+                </div>
+                <div class="content-resp">
+                <a
+                href="#"
+                class="resp text-white btn ml-5 d-flex text-center "
+                >10 Likes - 12 Comments - 3 Bookmarks</a
+                >
+                </div>
+                <div class="actions d-flex justify-content-between align-items-center ml-5 mt-4">
+                    <a href="editMenu.html" class="btn-edit btn text-white pt-2">Edit Menu</a>
+                    <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete Menu</a>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- TODO section content end -->
+            
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="actions d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-edit btn text-white pt-2">Edit Menu</a>
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete Menu</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- TODO section content end -->
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="actions d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-edit btn text-white pt-2">Edit Menu</a>
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete Menu</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+            <!-- TODO section content end -->
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="actions d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-edit btn text-white pt-2">Edit Menu</a>
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete Menu</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- TODO section content end -->
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="actions d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-edit btn text-white pt-2">Edit Menu</a>
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete Menu</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- TODO section content end -->
+             <!-- TODO pagination start -->
+                <div class="pagination container-fluid mt-5 d-flex justify-content-center align-items-center">
+                    <div class="page-content d-flex align-items-baseline">
+                    <h6 class="mr-4">Show 1-5 From 20</h6>
+                    <button class="page-next btn text-white">Next</button>
+                    </div>  
+                </div>
+            <!-- TODO pagination end --> 
+          </div>
+          <!-- Konten Tab Bookmarked -->
+          <div class="tab-pane fade" id="bookmarked" role="tabpanel" aria-labelledby="bookmarked-tab">
+            <!-- TODO section content start -->
+            <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="utility-bookmark d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete From Bookmark</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- TODO section content end -->
+             <!-- TODO section content start -->
+             <div class="content-wrapper container-fluid d-flex">
+                <div class="menu-content-pic d-flex mt-5">
+            
+                    <img src="assets/img/gambarDua.png" class="rounded" alt="" />
+                    <div class="menu-content-wrapper d-flex flex-column">
+                    <div class="menu-content ml-5">
+                    <h5>Bomb<br />Chicken</h5>
+                    <p class="mb-0">Ingredients:</pm>
+                    <p>
+                        Chicken, Dumpling wrap, Garlic, Spring onion, Soy sauce, Black
+                        Sesame seed
+                    </p>
+                    </div>
+                    <div class="content-resp">
+                    <a
+                    href="#"
+                    class="resp text-white btn ml-5 d-flex text-center "
+                    >10 Likes - 12 Comments - 3 Bookmarks</a
+                    >
+                    </div>
+                    <div class="utility-bookmark d-flex justify-content-between align-items-center ml-5 mt-4">
+                        <a href="#" class="btn-delete btn pt-2 pl-2 text-white">Delete From Bookmark</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <!-- TODO section content end -->
+            <!-- TODO pagination start -->
+                <div class="pagination container-fluid mt-5 d-flex justify-content-center align-items-center">
+                    <div class="page-content d-flex align-items-baseline">
+                        <button class="page-prev btn text-white">Prev</button>
+                    <h6 class="ml-4">Show 6-10 From 10</h6>
+                    </div>  
+                </div>
+            <!-- TODO pagination end --> 
+          </div>
+    
+          <!-- Konten Tab Liked -->
+          <div class="tab-pane fade" id="liked" role="tabpanel" aria-labelledby="liked-tab">
+            <h3>Liked Content</h3>
+            <!-- Tempat untuk menampilkan konten resep yang telah disukai (liked) -->
+          </div>
+        </div>
+      </div>
+    <!-- TODO Tab section end -->
+    <!-- TODO footer start -->
+    <footer
+      class="footer1 pt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+    >
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div class="wrapper5">
+        <h1 class="text-center">Eat, Cook, Repeat</h1>
+        <h5 class="text-center">Share your best recipe by uploading here !</h5>
+      </div>
+    </div>
+      
+    </footer >
+    <!-- ! -->
+    <footer class="footer2 w-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="foot d-flex justify-content-center">
+        <ul class="d-flex list-unstyled">
+          <li>Product</lic>
+          <li>Company</li>
+          <li>Learn More</li>
+          <li>Get in Touch</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- TODO footer end -->
+    <!-- Bootstrap JS start -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS end -->
+  </body>
+</html>

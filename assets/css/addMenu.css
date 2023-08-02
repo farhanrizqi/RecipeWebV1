@@ -1,0 +1,129 @@
+.custom-button {
+  background-color: #efc81a;
+  color: #fff; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.custom-button2 {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.modal-body .cancelLogout {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+/* ! colorbox start */
+
+.sideBlock {
+  background-color: #efc81a;
+  position: absolute;
+  z-index: -9999;
+  width: 2%;
+  height: 110%;
+}
+
+/* ! colorbox end */
+
+/* ! nav start */
+.block {
+  width: 3px;
+  height: 45px;
+  background: #efc81a;
+}
+
+.nav-account img {
+  width: 40px;
+  height: 35px;
+  padding-right: 2%;
+}
+.logoutAcc a {
+  text-decoration: none;
+}
+/* ! nav end */
+
+/* ! Content start */
+.content-container .addPhoto {
+  padding-top: 25%;
+}
+.addPhoto {
+  background-color: #f8f9fa;
+  color: #f8f9fa;
+}
+.addPhoto input {
+  color: #6c757d;
+}
+.addFile input {
+  height: 60px;
+  background-color: #f8f9fa;
+  border-style: none;
+  outline: none;
+}
+.buttonPost .post {
+  /* font-family: "Poppins"; */
+  background-color: #efc81a;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  border-style: none;
+}
+.addIngredients textarea {
+  background-color: #f8f9fa;
+  border-style: none;
+  outline: none;
+}
+.category .selectCategory {
+  background-color: #f8f9fa;
+  border-style: none;
+  outline: none;
+}
+
+#previewContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ! Content end */
+
+/* ! footer start */
+.footer1 {
+  background-color: #efc81a;
+  height: 100%;
+}
+.footer2 {
+  background-color: #efc81a;
+}
+
+.wrapper5 {
+  color: #2e266f;
+}
+.foot li {
+  /* font-size: 15px; */
+  color: #707070;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30%;
+  margin-bottom: 10px;
+}
+
+/* ! footer end */

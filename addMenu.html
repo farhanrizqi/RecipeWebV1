@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- css bootstrap end-->
+    <!-- Google Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Lora:ital@1&family=Poppins:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts end -->
+    <link rel="stylesheet" href="assets/css/addMenu.css" />
+    <title>Recipe Web</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis">
+        <div class="container pe-5 ps-5 mt-3">
+            <div class="burger">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="addMenu.html">Add Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Search Menu</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="user d-flex justify-content-center align-items-center">
+              <div class="block me-2"></div>
+                <div class="photo me-2">
+                  <a href="detailProfile.html">
+                    <img src="assets/img/iconComment.png" alt="Search" width="40" />
+                  </a>
+                </div>
+                <div class="logoutAcc">
+                    <a  href="profile.html" class="text-dark mb-0">Ayudia</a>
+                    <p class="mb-0">
+                        <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#logoutModal"><strong>Logout</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal Logout  start-->
+    <div
+    class="modal modal-md"
+    id="logoutModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="activeModal"
+    aria-hidden="true"
+  >
+    <div
+      class="modal-dialog modal-dialog-centered"
+      role="document"
+    >
+      <div class="modal-content align-items-center">
+        <div class="modal-body text-center mt-5">
+          <!-- Modal content goes here -->
+          <p class="font-weight-bold form-control-lg">
+            You want to logout?
+          </p>
+        </div>
+        <a
+          href="auth/login.html"
+          class="activated btn mb-1 custom-button"
+          >Yes</a
+        >
+        <a
+          class="activated btn mb-5 custom-button2"
+          data-bs-dismiss="modal"
+          >Cancel</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Logout end -->
+    </header>
+
+    <!-- TODO content section start-->
+    <section
+      class="content w-100 d-flex justify-content-center"
+      style="height: 100vh"
+    >
+      <div class="content-container  w-50 d-flex flex-column">
+  <div class="addPhoto bg-light h-100 mb-2 mt-5 text-center rounded">
+    <div id="previewContainer"></div>
+    <div class="upload-area">
+      <label class="mt-2 text-dark" for="imageUpload">Add photo</label>
+      <input type="file"
+             class="upload-image form-control visually-hidden"
+             id="imageUpload"
+             accept="image/*"
+             onchange="previewImage(event)"></input>
+    </div>
+  </div>
+  
+        <form class="addFile w-100 mb-2 pt-3 rounded">
+            <div class="form-group">
+              <input type="text" class="form-control " placeholder="Title">
+            </div>
+          </form>
+        <div class="addIngredients w-100 h-25 mb-2 pt-2 rounded">
+            <div class="form-floating">
+                <textarea class="w-100 rounded-2 ps-3 pt-3 ms-0" placeholder="Ingredients" style="height: 150px"></textarea>
+            </div>
+        </div>
+          <div class="category">
+            <select class="selectCategory form-select w-25" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Category</option>
+              <option value="1">Appetizer</option>
+              <option  value="2">Main Course</option>
+              <option value="3">Dessert</option>
+            </select>
+          </div>
+      </div>
+    </section>
+    <div
+      class="buttonPost mt-3 mb-5 d-flex justify-content-center align-items-center"
+    >
+      <button class="post btn w-25 rounded text-center ">Post</button>
+    </div>
+    <!-- TODO content section end-->
+
+    <!-- TODO footer start -->
+    <footer
+      class="footer1 pt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+    >
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div class="wrapper5">
+        <h1 class="text-center">Eat, Cook, Repeat</h1>
+        <h5 class="text-center">Share your best recipe by uploading here !</h5>
+      </div>
+    </div>
+      
+    </footer >
+    <!-- ! -->
+    <footer class="footer2 w-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="foot d-flex justify-content-center">
+        <ul class="d-flex list-unstyled">
+          <li>Product</lic>
+          <li>Company</li>
+          <li>Learn More</li>
+          <li>Get in Touch</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- TODO footer end -->
+    <!-- Bootstrap JS start -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src="assets/js/detailProfile.js"></script>
+
+    <!-- Bootstrap JS end -->
+  </body>
+</html>

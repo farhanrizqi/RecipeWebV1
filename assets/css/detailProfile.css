@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #efc81a;
+  --secondary-color: #8692a6;
+  --custom-color: #f5f5f5;
+}
+
+.button-update {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 80%;
+  border-style: none;
+}
+.custom-button {
+  background-color: var(--primary-color);
+  color: #fff; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.custom-button2 {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+.modal-body .cancelLogout {
+  background-color: #e7e7e7;
+  color: #8692a6; /* Set text color to white for better contrast */
+  border: none;
+  border-radius: 4px;
+  padding: 2% 5%;
+  cursor: pointer;
+  width: 50%;
+  border-style: none;
+}
+
+.custom-text {
+  color: var(--secondary-color);
+}
+
+.upload-image {
+  width: 100%;
+}
+.upload-container {
+  width: 12rem;
+  height: 2rem;
+}
+
+/* .upload-container {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  border: 1px solid #ced4da;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-file-upload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+} */
+
+/* Gaya kustom untuk div previewContainer */
+#previewContainer {
+  border-radius: 50%; /* Membuat div menjadi bulat */
+  overflow: hidden; /* Pastikan konten di dalam div tidak keluar */
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+}
+
+* {
+  font-family: "Poppins";
+}
+
+/* ! nav start */
+.block {
+  width: 3px;
+  height: 45px;
+  background: #efc81a;
+}
+
+.nav-account img {
+  width: 40px;
+  height: 35px;
+  padding-right: 2%;
+}
+
+.comment2 a {
+  color: #efc81a;
+}
+/* ! nav end */
+
+.regis {
+  /* background-color: darkseagreen; */
+  height: 100vh;
+}
+
+.regis h3 {
+  font-family: "Poppins";
+  color: #efc81a;
+  text-align: center;
+}
+.regis p {
+  font-family: "Poppins";
+  color: #8692a6;
+  text-align: center;
+}
+
+.content {
+  background-color: coralBlue;
+  justify-content: center;
+  align-items: center;
+}
+
+.content hr {
+  width: 427px;
+  top: 520px;
+  left: 747px;
+}
+
+.content .formReg {
+  /* background-color: burlywood; */
+  width: 30%;
+}
+#name:focus {
+  outline: none;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+  border-color: #efc81a;
+}
+#email:focus {
+  outline: none;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+  border-color: #efc81a;
+}
+#pass:focus {
+  outline: none;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+  border-color: #efc81a;
+}
+.buttonRegis:hover {
+  background-color: #fff;
+  color: #efc81a;
+  border: 1px solid #efc81a;
+}
+
+span a {
+  color: #efc81a;
+}
+::placeholder {
+  font-size: 12px;
+}
+.modal-body {
+  color: #efc81a;
+}
+.modal-body .sub {
+  color: #8692a6;
+}
+.verif:hover {
+  background-color: #fff;
+  color: #efc81a;
+  border: 1px solid #efc81a;
+}
+.activated:hover {
+  background-color: #fff;
+  color: #efc81a;
+  border: 1px solid #efc81a;
+}

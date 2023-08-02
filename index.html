@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <!-- css bootstrap end-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Recipe Web</title>
+  </head>
+  <body>
+      <!-- colorbox start-->
+      <div class="container-side">
+        <div class="sideBlock"></div>
+      </div>
+      <!-- colorbox end -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis">
+          <div class="container mb-4 pe-5 ps-5 mt-3">
+              <div class="burger">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+                          <li class="nav-item me-5">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item me-5">
+                              <a class="nav-link" href="addMenu.html">Add Menu</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="menu.html">Search Menu</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="user d-flex justify-content-center align-items-center">
+                  <div class="photo me-4">
+                    <a href="detailProfile.html">
+                      <img src="assets/img/iconComment.png" alt="Search" width="40" />
+                    </a>  
+                  </div>
+                  <div class="logoutAcc">
+                      <a href="profile.html" class="text-dark mb-0">Ayudia</a>
+                      <p class="mb-0">
+                          <a href="#" class="text-dark" data-toggle="modal" data-target="#logoutModal"><strong>Logout</strong></a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      <!-- Modal Logout  start-->
+      <div
+      class="modal modal-md"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="activeModal"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered"
+        role="document"
+      >
+        <div class="modal-content align-items-center">
+          <div class="modal-body text-center mt-5">
+            <!-- Modal content goes here -->
+            <p class="font-weight-bold form-control-lg">
+              You want to logout?
+            </p>
+          </div>
+          <a
+            href="auth/login.html"
+            class="activated btn mb-1 custom-button"
+            >Yes</a
+          >
+          <a
+            class="activated btn mb-5 custom-button2"
+            data-dismiss="modal"
+            >Cancel</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Logout end -->
+      </header>
+
+    <!-- TODO Section Discover start -->
+    <section id="discover">
+      <div class="container">
+        <div class="content1 row">
+          <div class="slide1 col-md-7 d-flex flex-column justify-content-center">
+            <section>
+              <h1 class="ms-5">Discover Recipe <br />& Delicious Food</h1>
+            </section>
+            <input
+              type="text"
+              class="search ms-5 rounded-3 border-0"
+              placeholder="Search Restaurant, Food"
+            />
+          </div>
+    
+          <div class="slide2 col-md-5">
+            <img class="rounded-4" src="assets/img/discover.png" alt="discover" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO Section Discover end -->
+    <!-- TODO Section Popular start -->
+    <section id="popular">
+      <div class="container">
+        <div class="row">
+          <div class="pageTitle col d-flex align-items-center mb-5">
+            <div class="block"></div>
+            <h2 class="text-start">Popular For You !</h2>
+          </div>
+          </div>
+          <div class="row">
+          <!-- dot 6 -->
+          <div class="slide1 col-md-1">
+                <div class="circle position-absolute">
+                  <div class="circle1">
+                      <div class="circle-round rounded-circle"></div>
+                      <div class="circle-round rounded-circle"></div>
+                      <div class="circle-round rounded-circle"></div>
+                  </div>
+                  <div class="circle2">
+                      <div class="circle-round rounded-circle"></div>
+                      <div class="circle-round rounded-circle"></div>
+                      <div class="circle-round rounded-circle"></div>
+                  </div>
+              </div>
+            </div>
+            <!-- dot 6 end -->
+          <div class="image2 col-md-5">
+              <img src="assets/img/fyp.png" width="440" alt="Popular For You !" />
+            </div>
+            <div class="slide2 col-md-6 d-flex align-items-center">
+              <div class="wrapper">
+                <h2>
+                  Healthy Bone Broth<br />
+                Ramen (Quick &amp; Easy)
+              </h2>
+              <hr />
+              <h5>
+                Quick + Easy Chicken Bone Broth Ramen-<br />
+                Healthy chicken ramen in a hurry? That’s right!
+              </h5>
+              <button class="learnMore mt-2 border-0 rounded-2">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO Section Popular end -->
+    <!-- TODO Section New Recipe start -->
+    <section id="new-recipe">
+      <div class="container">
+        <div class="content3 row mb-5">
+          <div class="pageTitle col d-flex align-items-center">
+            <div class="block"></div>
+            <h2 class="text-lg-start">New Recipe</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- left start -->
+          <div class="slide1 col-md-5">
+            <div class="sideBarLeft"></div>
+            <div class="image3">
+              <img src="assets/img/newRecipe.png" width="440"  alt="Burger" />
+            </div>
+          </div>
+          <!-- left end -->
+          <!-- right start  -->
+          <div class="slide2 col-md-7 d-flex align-items-center">
+            <div class="wrapper">
+              <h2>
+                Healthy Bone Broth<br />
+                Ramen (Quick &amp; Easy)
+              </h2>
+              <hr />
+              <h5>
+                Quick + Easy Chicken Bone Broth Ramen-<br />
+                Healthy chicken ramen in a hurry? That’s right!
+              </h5>
+              <button class="learnMore mt-2 border-0 rounded-2">Learn More</button>
+            </div>
+          </div>
+          <!-- right end -->
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- TODO Section New Recipe end -->
+    <!-- TODO Section Top start -->
+    <section id="top">
+      <div class="container">
+        <div class="row">
+          <div class="pageTitle col d-flex align-items-center">
+            <div class="block"></div>
+            <h2 class="text-lg-start">Popular Recipe</h2>
+          </div>
+        </div>
+        <div class="content-top row">
+          <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe1 rounded-3">
+                            <p>
+                                Chicken <br />
+                                Kare
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe2 rounded-3">
+                            <p>
+                                Bomb <br />
+                                Chicken
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe3 rounded-3">
+                            <p>
+                                Banana<br />
+                                Smothie Pop
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe4 rounded-3">
+                            <p>
+                                Coffe Lava <br />
+                                Cake
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe5 rounded-3">
+                            <p>
+                                Sugar <br />
+                                Salmon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col mt-5 d-flex justify-content-center">
+                        <div class="recipe6 rounded-3">
+                            <p>
+                                Indian<br />
+                                Salad
+                            </p>
+                        </div>
+                    </div>
+        </div>
+      </div>
+    </section>
+    <!-- TODO Section Top end -->
+    <!-- TODO footer start -->
+    <footer
+      class="footer1 pt-5 w-100 d-flex flex-column justify-content-center align-items-center"
+    >
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div class="wrapper5">
+        <h1 class="text-center">Eat, Cook, Repeat</h1>
+        <h5 class="text-center">Share your best recipe by uploading here !</h5>
+      </div>
+    </div>
+      
+    </footer >
+    <!-- ! -->
+    <footer class="footer2 w-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="foot d-flex justify-content-center">
+        <ul class="d-flex list-unstyled">
+          <li>Product</lic>
+          <li>Company</li>
+          <li>Learn More</li>
+          <li>Get in Touch</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- TODO footer end -->
+
+    <!-- Bootstrap JS start -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS end -->
+  </body>
+</html>
